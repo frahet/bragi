@@ -1,0 +1,38 @@
+{
+  "name": "bragi",
+  "version": "0.1.0",
+  "description": "Gmail MCP server with app-password auth. No OAuth, no browser, container-friendly.",
+  "type": "module",
+  "main": "src/index.mjs",
+  "bin": {
+    "bragi": "src/index.mjs"
+  },
+  "scripts": {
+    "start": "node src/index.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "imapflow": "^1.0.193",
+    "mailparser": "^3.7.0",
+    "nodemailer": "^7.0.3"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "author": "Frank Hetland",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frahet/bragi.git"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "gmail",
+    "imap",
+    "smtp",
+    "claude",
+    "openclaw",
+    "app-password"
+  ]
+}

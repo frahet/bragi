@@ -17,7 +17,7 @@ const env = (key, fallback) => {
 };
 
 const GMAIL_USER = env("GMAIL_USER");
-const GMAIL_APP_PASSWORD = env("GMAIL_APP_PASSWORD").replace(/\s+/g, "");
+const GMAIL_APP_PASSWORD = env("GMAIL_APP_PASSWORD").replace(/[\s-]+/g, "");
 const IMAP_HOST = env("IMAP_HOST", "imap.gmail.com");
 const IMAP_PORT = parseInt(env("IMAP_PORT", "993"), 10);
 const SMTP_HOST = env("SMTP_HOST", "smtp.gmail.com");
